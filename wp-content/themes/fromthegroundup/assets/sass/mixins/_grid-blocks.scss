@@ -1,0 +1,12 @@
+@mixin grid-blocks-reset($numberOfBlocks) {
+    &:nth-child(#{$numberOfBlocks}n + 0) {
+        margin-right: gutter();
+    }
+}
+
+@mixin grid-blocks($numberOfBlocks) {
+    @include span( $susyColumns / $numberOfBlocks );
+    &:nth-child(#{$numberOfBlocks}n + 0) {
+        margin-right:0;
+    }
+}

@@ -1,0 +1,52 @@
+@import 'variables/variables';
+@import 'susy';
+
+$susy: (
+  columns: $susyColumns,
+  gutters: 1/3,
+  math: fluid,
+  output: float,
+  gutter-position: after,
+);
+
+@import 'typography/typography';
+@import 'blocks/blocks';
+@import 'templates/templates';
+@import 'mixins/mixins';
+
+
+html, body {
+  margin:0;
+}
+
+.content-block {
+    //clear:both;
+    //width: 100%;
+    @include grid-blocks(6);
+    @include bp(bp--2) {
+        @include grid-blocks-reset(6);
+        @include grid-blocks(4);
+    }
+}
+
+$bp--1:"1200px";
+$bp--2:"1024px";
+$bp--3:"768px";
+
+.container {
+    clear:both;
+    &--fw {
+        width: 100%;
+    }
+    &--content {
+        max-width: 1200px;
+        margin:0 auto;
+    }
+}
+
+.viewport--padding {
+    @include bp(bp--1) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

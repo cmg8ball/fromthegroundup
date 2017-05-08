@@ -1,0 +1,6 @@
+{
+  "name": "fromthegroundup",
+  "dependencies": {
+    "css-hamburgers": "~0.5.0"
+  }
+}

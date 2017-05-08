@@ -1,0 +1,41 @@
+{% for contentBlocks in post.get_field('content-blocks') %}
+
+    {% if contentBlocks.acf_fc_layout == 'content-blocks__cta_button' %}
+
+		{% include 'content-blocks/wysiwyg.twig' %}
+
+    {% elseif contentBlocks.acf_fc_layout == 'content-blocks__cta-block' %}
+
+		{% include 'content-blocks/cta-block.twig' %}
+
+    {% elseif contentBlocks.acf_fc_layout == 'content-blocks__divider' %}
+
+		{% include 'content-blocks/divider.twig' %}
+
+    {% elseif contentBlocks.acf_fc_layout == 'content-blocks__full_width_image' %}
+
+		{% include 'content-blocks/full-width-image.twig' %}
+
+    {% elseif contentBlocks.acf_fc_layout == 'content-blocks__gallery' %}
+
+		{% include 'content-blocks/gallery.twig' %}
+
+    {% elseif contentBlocks.acf_fc_layout == 'content-blocks__media_embed' %}
+
+		{% include 'content-blocks/media_embed.twig' %}
+
+    {% elseif contentBlocks.acf_fc_layout == 'content-blocks__quote' %}
+
+		{% include 'content-blocks/quote.twig' %}
+
+    {% elseif contentBlocks.acf_fc_layout == 'content-blocks__team_member' %}
+
+		{% include 'content-blocks/team_member.twig' %}
+
+    {% elseif contentBlocks.acf_fc_layout == 'content-blocks__wysiwyg' %}
+
+		{% include 'content-blocks/wysiwyg.twig' %}
+
+    {% endif %}
+
+{% endfor %}

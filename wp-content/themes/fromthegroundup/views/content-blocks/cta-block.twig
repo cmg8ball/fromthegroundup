@@ -1,0 +1,8 @@
+{% if contentBlocks.link.target %}
+    {% set target = "target='_blank'" %}
+{% endif %}
+<div class="content-block cta-block__theme--{{ contentBlocks.theme }}" >
+    <h3>{{ contentBlocks.title }}</h3>
+    <p>{{ contentBlocks.content }}</p>
+    <a class="btn" href="{{ contentBlocks.link.url }}" {{ target }} >{{ contentBlocks.link.text }}</a>
+</div>

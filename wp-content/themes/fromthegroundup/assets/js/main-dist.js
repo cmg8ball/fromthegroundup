@@ -1,0 +1,1 @@
+jQuery(document).ready(function(o){o(window).width(),o(window).height(),o(document).scrollTop()});
