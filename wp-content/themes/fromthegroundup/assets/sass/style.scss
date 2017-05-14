@@ -1,4 +1,18 @@
-@import 'variables/variables';
+/* BASE */
+@import 'base/typography';
+
+/* COMPONENTS */
+
+/* LAYOUT */
+
+/* TEMPLATES */
+
+/* UTILITIES */
+@import 'utilities/mixins';
+@import 'utilities/variables';
+/* VENDOR */
+
+
 @import 'susy';
 
 $susy: (
@@ -8,12 +22,6 @@ $susy: (
   output: float,
   gutter-position: after,
 );
-
-@import 'typography/typography';
-@import 'blocks/blocks';
-@import 'templates/templates';
-@import 'mixins/mixins';
-
 
 html, body {
   margin:0;
@@ -28,10 +36,6 @@ html, body {
         @include grid-blocks(4);
     }
 }
-
-$bp--1:"1200px";
-$bp--2:"1024px";
-$bp--3:"768px";
 
 .container {
     clear:both;

@@ -1,3 +1,4 @@
+/* BREAKPOINTS */
 $bp--1: 1200px; // tablet landscape
 $bp--2: 1024px; // tablet portrait
 $bp--3: 768px; // mobile
@@ -16,4 +17,18 @@ $bp--3: 768px; // mobile
 		@media screen and (max-width: $bp--1) { @content; };
 	}
 
+}
+
+/* GRID BLOCKS */
+@mixin grid-blocks-reset($numberOfBlocks) {
+    &:nth-child(#{$numberOfBlocks}n + 0) {
+        margin-right: gutter();
+    }
+}
+
+@mixin grid-blocks($numberOfBlocks) {
+    @include span( $susyColumns / $numberOfBlocks );
+    &:nth-child(#{$numberOfBlocks}n + 0) {
+        margin-right:0;
+    }
 }
