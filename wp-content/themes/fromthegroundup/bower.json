@@ -1,5 +1,6 @@
 {
   "name": "fromthegroundup",
+  "directory": "assets/bower_components",
   "dependencies": {
     "css-hamburgers": "~0.5.0"
   }
