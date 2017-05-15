@@ -1,31 +1,27 @@
-/* BASE */
-@import 'base/typography';
-
-/* COMPONENTS */
-
-/* LAYOUT */
-
-/* TEMPLATES */
+@import 'susy';
 
 /* UTILITIES */
 @import 'utilities/mixins';
 @import 'utilities/variables';
+
+/* BASE */
+@import
+    'base/resets',
+    'base/grid',
+    'base/typography';
+
+/* COMPONENTS */
+@import 'components/button';
+@import 'components/forms';
+@import 'components/lists';
+
+/* LAYOUT */
+@import 'layout/cta';
+
+/* TEMPLATES */
+
 /* VENDOR */
 
-
-@import 'susy';
-
-$susy: (
-  columns: $susyColumns,
-  gutters: 1/3,
-  math: fluid,
-  output: float,
-  gutter-position: after,
-);
-
-html, body {
-  margin:0;
-}
 
 .content-block {
     //clear:both;
