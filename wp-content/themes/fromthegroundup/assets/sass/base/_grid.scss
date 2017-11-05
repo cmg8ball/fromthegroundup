@@ -1,3 +1,4 @@
+// SUSY MAP
 $susy: (
   columns: $susyColumns,
   gutters: 1/3,
@@ -5,3 +6,13 @@ $susy: (
   output: float,
   gutter-position: after,
 );
+
+// GRID CLASSES, USED SUSY 2 FUNCTIONS FOR CALCULATIONS
+@for $i from 1 through 24 {
+  .col--#{$i} {
+      @include span($i);
+  }
+}
+.col--last {
+    margin-right: 0;
+}
