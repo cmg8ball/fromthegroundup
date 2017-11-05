@@ -66,4 +66,4 @@ prepros-6.config
 # Other #
 ###################
 .bowerrc
-wp-content\themes\fromthegroundup\assets\bower_components
+wp-content\themes\fromthegroundup\bower_components
