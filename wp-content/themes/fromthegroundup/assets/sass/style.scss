@@ -1,8 +1,9 @@
 @import 'susy';
 
 /* UTILITIES */
-@import 'utilities/mixins';
-@import 'utilities/variables';
+@import
+    'utilities/mixins',
+    'utilities/variables';
 
 /* BASE */
 @import
@@ -11,9 +12,12 @@
     'base/typography';
 
 /* COMPONENTS */
-@import 'components/button';
-@import 'components/forms';
-@import 'components/lists';
+@import
+    'components/button',
+    'components/forms',
+    'components/lists',
+    'components/tables',
+    'components/zindex';
 
 /* LAYOUT */
 @import 'layout/cta';
@@ -41,6 +45,15 @@
     &--content {
         max-width: 1200px;
         margin:0 auto;
+        @include bp(bp--1) {
+            max-width: $bp--1;
+        }
+        @include bp(bp--2) {
+            max-width: $bp--2;
+        }
+        @include bp(bp--3) {
+            max-width: $bp--3;
+        }
     }
 }
 
@@ -49,4 +62,9 @@
         padding-left: 10px;
         padding-right: 10px;
     }
+}
+
+.box {
+    width: span(6);
+    background-color:red;
 }

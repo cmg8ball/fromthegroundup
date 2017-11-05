@@ -4,19 +4,15 @@ $bp--2: 1024px; // tablet portrait
 $bp--3: 768px; // mobile
 
 @mixin bp($breakpoint) {
-
 	@if $breakpoint == bp--3 {
 		@media screen and (max-width: $bp--3) { @content; };
 	}
-
 	@else if $breakpoint == bp--2 {
 		@media screen and (max-width: $bp--2) { @content; };
 	}
-
 	@else if $breakpoint == bp--1 {
 		@media screen and (max-width: $bp--1) { @content; };
 	}
-
 }
 
 /* GRID BLOCKS */

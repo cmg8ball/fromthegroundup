@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--><html class="no-js" {{site.language_attributes}}> <!--<![endif]-->
 <head>
     <meta charset="{{site.charset}}" />
-        <title>   
+        <title>
             {% if wp_title %}
                 {{ wp_title }} - {{ site.name }}
             {% else %}
@@ -21,7 +21,7 @@
     {{function('wp_head')}}
 </head>
 <body>
+    <div class='header'>
+        <p>This is the header</p>
+    </div>
     <div id=wrapper>
-        <div class='header'>
-            <p>This is the header</p>
-        </div>
