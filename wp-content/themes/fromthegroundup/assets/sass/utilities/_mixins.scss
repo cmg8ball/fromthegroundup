@@ -28,3 +28,11 @@ $bp--3: 768px; // mobile
         margin-right:0;
     }
 }
+
+/* PIXELS TO REM CONVERSION */
+@mixin rem-calc($sizeValue: 16, $line: $sizeValue * 1.5) {
+    font-size: ($sizeValue) + px;
+    line-height: ($line) + px;
+    font-size: ($sizeValue / 16) + rem;
+    line-height: ($line / 16) + rem;
+}
