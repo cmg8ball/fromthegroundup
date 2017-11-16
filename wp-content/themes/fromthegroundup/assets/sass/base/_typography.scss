@@ -50,7 +50,10 @@ h6 {
 
 p {
     @include rem_calc(12,18);
-//    font-size: ;
-//    line-height: ;
-//    margin-bottom: ;
+    margin-bottom: 20px;
+}
+
+a {
+    color: $link-color;
+    text-decoration: none;
 }

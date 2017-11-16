@@ -20,7 +20,11 @@
     'components/zindex';
 
 /* LAYOUT */
-@import 'layout/cta';
+@import
+    'layout/header',
+    'layout/footer',
+    'layout/overlay',
+    'layout/cta';
 
 /* TEMPLATES */
 

@@ -272,7 +272,12 @@ p {
   font-size: 12px;
   line-height: 18px;
   font-size: 0.75rem;
-  line-height: 1.125rem; }
+  line-height: 1.125rem;
+  margin-bottom: 20px; }
+
+a {
+  color: #456432;
+  text-decoration: none; }
 
 /* COMPONENTS */
 .btn {
@@ -281,12 +286,28 @@ p {
   border-radius: 4px; }
 
 .header {
-  z-index: 100; }
+  z-index: 90; }
 
 #wrapper {
   z-index: 10; }
 
+.overlay {
+  z-index: 100; }
+
 /* LAYOUT */
+.footer {
+  clear: both; }
+
+.overlay {
+  position: fixed;
+  left: 0;
+  top: -100%;
+  width: 100%;
+  height: 100%; }
+
+.active--overlay .overlay {
+  top: 0; }
+
 /* TEMPLATES */
 /* VENDOR */
 .content-block {
