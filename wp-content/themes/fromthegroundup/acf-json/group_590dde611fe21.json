@@ -65,18 +65,51 @@
                 },
                 {
                     "key": "590de16aa0c1b",
-                    "name": "content-blocks__cta-block",
-                    "label": "CTA block",
+                    "name": "content-blocks__cta",
+                    "label": "Call to Action",
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_590de17ea0c1c",
-                            "label": "Theme",
-                            "name": "theme",
+                            "key": "field_5a0cfb0144e9b",
+                            "label": "Type",
+                            "name": "cta__type",
                             "type": "select",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "single": "Single CTA link",
+                                "ctaBlock": "CTA Block"
+                            },
+                            "default_value": [],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_590de17ea0c1c",
+                            "label": "Theme",
+                            "name": "cta_block__theme",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5a0cfb0144e9b",
+                                        "operator": "==",
+                                        "value": "ctaBlock"
+                                    }
+                                ]
+                            ],
                             "wrapper": {
                                 "width": "",
                                 "class": "",
@@ -90,7 +123,41 @@
                             ],
                             "allow_null": 0,
                             "multiple": 0,
-                            "ui": 1,
+                            "ui": 0,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_5a0cfc6b44e9c",
+                            "label": "Alignment",
+                            "name": "cta_single__alignment",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5a0cfb0144e9b",
+                                        "operator": "==",
+                                        "value": "single"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "left": "Left",
+                                "center": "Center",
+                                "right": "Right"
+                            },
+                            "default_value": [],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
                             "ajax": 0,
                             "return_format": "value",
                             "placeholder": ""
@@ -98,11 +165,19 @@
                         {
                             "key": "field_590de1a6a0c1d",
                             "label": "Title",
-                            "name": "title",
+                            "name": "cta_block__title",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
-                            "conditional_logic": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5a0cfb0144e9b",
+                                        "operator": "==",
+                                        "value": "ctaBlock"
+                                    }
+                                ]
+                            ],
                             "wrapper": {
                                 "width": "",
                                 "class": "",
@@ -117,11 +192,19 @@
                         {
                             "key": "field_590de1b4a0c1e",
                             "label": "Content",
-                            "name": "content",
+                            "name": "cta_block__content",
                             "type": "textarea",
                             "instructions": "",
                             "required": 0,
-                            "conditional_logic": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5a0cfb0144e9b",
+                                        "operator": "==",
+                                        "value": "ctaBlock"
+                                    }
+                                ]
+                            ],
                             "wrapper": {
                                 "width": "",
                                 "class": "",
@@ -131,7 +214,7 @@
                             "placeholder": "",
                             "maxlength": "",
                             "rows": "",
-                            "new_lines": ""
+                            "new_lines": "wpautop"
                         },
                         {
                             "key": "field_590de1bba0c1f",
@@ -182,5 +265,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1494873226
+    "modified": 1510802286
 }

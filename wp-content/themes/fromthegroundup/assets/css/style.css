@@ -2,6 +2,15 @@
 /* BREAKPOINTS */
 /* GRID BLOCKS */
 /* PIXELS TO REM CONVERSION */
+.align--left {
+  text-align: left; }
+
+.align--center {
+  text-align: center; }
+
+.align--right {
+  text-align: right; }
+
 /* BASE */
 @-ms-viewport {
   width: device-width;
@@ -310,22 +319,6 @@ a {
 
 /* TEMPLATES */
 /* VENDOR */
-.content-block {
-  width: 15.78947%;
-  float: left;
-  margin-right: 1.05263%; }
-  .content-block:nth-child(6n + 0) {
-    margin-right: 0; }
-  @media screen and (max-width: 1024px) {
-    .content-block {
-      width: 24.21053%;
-      float: left;
-      margin-right: 1.05263%; }
-      .content-block:nth-child(6n + 0) {
-        margin-right: 1.05263%; }
-      .content-block:nth-child(4n + 0) {
-        margin-right: 0; } }
-
 .container {
   clear: both; }
   .container--fw {

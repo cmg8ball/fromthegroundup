@@ -1,0 +1,15 @@
+{% if contentBlocks.cta__type == 'single' %}
+    <div class="content-block content__cta align--{{ contentBlocks.cta_single__alignment }}">
+        <a href="{{ contentBlocks.link.url }}" class="btn" target="{{ contentBlocks.link.target }}">{{ contentBlocks.link.text }}</a>
+    </div>
+{% else %}
+    <div class="content-block content__cta-block cta-block__theme--{{ contentBlocks.theme }}">
+        {% if contentBlocks.cta_block__title %}
+        <h3>{{ contentBlocks.cta_block__title }}</h3>
+        {% endif %}
+        {% if contentBlocks.cta_block__content %}
+        {{ contentBlocks.cta_block__content }}
+        {% endif %}
+        <a href="{{ contentBlocks.link.url }}" class="btn" target="{{ contentBlocks.link.target }}">{{ contentBlocks.link.text }}</a>
+    </div>
+{% endif %}

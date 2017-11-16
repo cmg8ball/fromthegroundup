@@ -3,7 +3,8 @@
 /* UTILITIES */
 @import
     'utilities/mixins',
-    'utilities/variables';
+    'utilities/variables',
+    'utilities/modifiers';
 
 /* BASE */
 @import
@@ -34,11 +35,11 @@
 .content-block {
     //clear:both;
     //width: 100%;
-    @include grid-blocks(6);
-    @include bp(bp--2) {
-        @include grid-blocks-reset(6);
-        @include grid-blocks(4);
-    }
+    // @include grid-blocks(6);
+    // @include bp(bp--2) {
+    //     @include grid-blocks-reset(6);
+    //     @include grid-blocks(4);
+    // }
 }
 
 .container {
