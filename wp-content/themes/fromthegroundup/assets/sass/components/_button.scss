@@ -1,5 +1,9 @@
 .btn {
     display: inline-block;
+    font-family: $ff-heading;
     padding:10px;
-    border-radius: $border-radius;
+    border: solid 1px $brand-color--1;
+    &--rounded {
+        border-radius: $border-radius;
+    }
 }

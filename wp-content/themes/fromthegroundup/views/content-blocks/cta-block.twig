@@ -1,8 +1,9 @@
-{% if contentBlocks.link.target %}
-    {% set target = "target='_blank'" %}
-{% endif %}
-<div class="content-block cta-block__theme--{{ contentBlocks.theme }}" >
-    <h3>{{ contentBlocks.title }}</h3>
-    <p>{{ contentBlocks.content }}</p>
-    <a class="btn" href="{{ contentBlocks.link.url }}" {{ target }} >{{ contentBlocks.link.text }}</a>
+<div class="content-block content__cta-block cta-block__theme--{{ contentBlocks.cta_block__theme }}">
+    {% if contentBlocks.cta_block__title %}
+    <h3 class="cta-block__title">{{ contentBlocks.cta_block__title }}</h3>
+    {% endif %}
+    {% if contentBlocks.cta_block__content %}
+    <p>{{ contentBlocks.cta_block__content }}</p>
+    {% endif %}
+    <a href="{{ contentBlocks.link.url }}" class="btn btn--rounded" target="{{ contentBlocks.link.target }}">{{ contentBlocks.link.text }}</a>
 </div>

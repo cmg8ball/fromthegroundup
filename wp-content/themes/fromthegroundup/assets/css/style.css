@@ -267,7 +267,11 @@ input::-moz-focus-inner {
 
 body {
   font-size: 62.5%;
-  font-family: "Georgia"; }
+  font-family: "Georgia";
+  font-size: 14px;
+  line-height: 18px;
+  font-size: 0.875rem;
+  line-height: 1.125rem; }
 
 h1,
 h2,
@@ -278,10 +282,6 @@ h6 {
   font-family: "Verdana"; }
 
 p {
-  font-size: 12px;
-  line-height: 18px;
-  font-size: 0.75rem;
-  line-height: 1.125rem;
   margin-bottom: 20px; }
 
 a {
@@ -291,8 +291,11 @@ a {
 /* COMPONENTS */
 .btn {
   display: inline-block;
+  font-family: "Verdana";
   padding: 10px;
-  border-radius: 4px; }
+  border: solid 1px #009444; }
+  .btn--rounded {
+    border-radius: 4px; }
 
 .header {
   z-index: 90; }
@@ -316,6 +319,15 @@ a {
 
 .active--overlay .overlay {
   top: 0; }
+
+.content__cta-block {
+  text-align: center;
+  padding: 40px;
+  background-color: #39B54A;
+  border: solid 1px #009444;
+  border-radius: 4px; }
+  .content__cta-block .cta-block__title {
+    margin-bottom: 30px; }
 
 /* TEMPLATES */
 /* VENDOR */

@@ -1,6 +1,7 @@
 body {
     font-size: 62.5%;
     font-family: $ff-body;
+    @include rem_calc(14,18);
 }
 
 h1,
@@ -49,7 +50,6 @@ h6 {
 //}
 
 p {
-    @include rem_calc(12,18);
     margin-bottom: 20px;
 }
 

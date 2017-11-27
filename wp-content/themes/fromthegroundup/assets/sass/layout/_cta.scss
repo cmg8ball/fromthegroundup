@@ -1,0 +1,11 @@
+// CTA BLOCK
+.content__cta-block {
+    text-align: center;
+    padding: 40px;
+    background-color: $brand-color--2;
+    border: solid 1px $brand-color--1;
+    border-radius: $border-radius;
+    .cta-block__title {
+        margin-bottom: 30px;
+    }
+}
