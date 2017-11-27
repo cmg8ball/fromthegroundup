@@ -25,21 +25,22 @@
     'layout/header',
     'layout/footer',
     'layout/overlay',
-    'layout/cta';
+    'layout/cta',
+    'layout/image';
 
 /* TEMPLATES */
 
 /* VENDOR */
 
-
 .content-block {
-    //clear:both;
-    //width: 100%;
-    // @include grid-blocks(6);
-    // @include bp(bp--2) {
-    //     @include grid-blocks-reset(6);
-    //     @include grid-blocks(4);
-    // }
+    clear: both;
+    margin:0 auto 40px;
+    &--small {
+        max-width: 600px;
+    }
+    &--medium {
+        max-width: 720px;
+    }
 }
 
 .container {
@@ -67,9 +68,4 @@
         padding-left: 10px;
         padding-right: 10px;
     }
-}
-
-.box {
-    width: span(6);
-    background-color:red;
 }

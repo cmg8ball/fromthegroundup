@@ -269,19 +269,11 @@
                         {
                             "key": "field_5a0d0b3d19579",
                             "label": "Image Style",
-                            "name": "image__single_style",
+                            "name": "image__style",
                             "type": "select",
                             "instructions": "",
                             "required": 0,
-                            "conditional_logic": [
-                                [
-                                    {
-                                        "field": "field_5a0d08fe19577",
-                                        "operator": "==",
-                                        "value": "single"
-                                    }
-                                ]
-                            ],
+                            "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
                                 "class": "",
@@ -305,7 +297,7 @@
                             "name": "image__single",
                             "type": "image",
                             "instructions": "",
-                            "required": 0,
+                            "required": 1,
                             "conditional_logic": [
                                 [
                                     {
@@ -392,5 +384,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1511816916
+    "modified": 1511821181
 }

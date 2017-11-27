@@ -1,0 +1,12 @@
+{% if contentBlocks.image__style == 'contained' %}
+    {% set imageStyle = 'content-block--small ' %}
+{% else %}
+    {% set imageStyle = '' %}
+{% endif %}
+
+<div class="content-block {{ imageStyle }}content__image">
+    <img src="{{ contentBlocks.image__single.url }}" class="image__single" alt="" />
+    {% if contentBlocks.image__single_caption %}
+    <span class="caption">{{ contentBlocks.image__single_caption }}</span>
+    {% endif %}
+</div>

@@ -7,3 +7,12 @@
 .align--right {
     text-align: right;
 }
+
+.caption {
+    display: block;
+    @include rem_calc(12,14);
+    font-weight: $fw--6;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
