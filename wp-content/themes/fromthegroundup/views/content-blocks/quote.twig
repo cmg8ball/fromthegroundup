@@ -1,0 +1,7 @@
+{% if contentBlocks.quote__style == 'fullWidth' %}
+    {# FULL WIDTH QUOTE #}
+    {% include "content-blocks/quote-full-width.twig" %}
+{% else %}
+    {# CONTAINED QUOTE #}
+    {% include "content-blocks/quote-contained.twig" %}
+{% endif %}

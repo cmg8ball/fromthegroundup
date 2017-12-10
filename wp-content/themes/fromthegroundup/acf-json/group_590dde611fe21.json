@@ -363,7 +363,7 @@
                             "label": "Slideshow",
                             "name": "image__slideshow",
                             "type": "repeater",
-                            "instructions": "",
+                            "instructions": "To use this field you must supply more than one image. Please ensure that the images used within this field have an aspect ratio of 2:1 e.g 1000 x 500 px.",
                             "required": 0,
                             "conditional_logic": [
                                 [
@@ -380,7 +380,7 @@
                                 "id": ""
                             },
                             "collapsed": "",
-                            "min": "",
+                            "min": 2,
                             "max": "",
                             "layout": "table",
                             "button_label": "Add Slide",
@@ -433,6 +433,79 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                {
+                    "key": "5a2d63e27230a",
+                    "name": "content-blocks__quote",
+                    "label": "Quote",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a2d64e4c0375",
+                            "label": "Quote Style",
+                            "name": "quote__style",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "fullWidth": "Full Width",
+                                "contained": "Contained"
+                            },
+                            "default_value": [],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_5a2d64027230b",
+                            "label": "Quote text",
+                            "name": "quote__quote_text",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_5a2d641e7230c",
+                            "label": "Quotee",
+                            "name": "quote__quotee",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             ]
         }
@@ -464,5 +537,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1512916843
+    "modified": 1512924481
 }
