@@ -8,3 +8,14 @@
         margin-bottom: 0;
     }
 }
+
+.content__image-slideshow {
+    .item {
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+    }
+}

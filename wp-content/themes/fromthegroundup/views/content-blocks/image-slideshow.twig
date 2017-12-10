@@ -1,6 +1,13 @@
-<div class="content-block content__image">
-    <img src="{{ contentBlocks.image__single.url }}" class="image__single" alt="" />
-    {% if contentBlocks.image__single_caption %}
-    <span class="caption">{{ contentBlocks.image__single_caption }}</span>
-    {% endif %}
+<div class="content-block content-block--small content__image-slideshow owl-carousel owl-theme js-owl">
+
+{% set slideshow = contentBlocks.image__slideshow %}
+{% for slide in slideshow %}
+    {% set slide = TimberImage(slide) %}
+    <div class="item">
+        <img src="{{ slide.slideshow__image.url }}" alt="" />
+        {% if slide.slideshow__caption %}
+        <span class="caption">{{ slide.slideshow__caption }}</span>
+        {% endif %}
+    </div>
+{% endfor %}
 </div>

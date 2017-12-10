@@ -31,6 +31,9 @@
 /* TEMPLATES */
 
 /* VENDOR */
+@import
+    '../../bower_components/owl.carousel/src/scss/owl.carousel.scss',
+    '../../bower_components/owl.carousel/src/scss/owl.theme.default.scss';
 
 .content-block {
     clear: both;

@@ -9,9 +9,15 @@ function my_jquery_enqueue() {
 
 add_action( 'wp_enqueue_scripts', 'my_jquery_enqueue' );
 
+// getting vendor js
+function vendor_js() {
+	wp_enqueue_script( 'owl', get_template_directory_uri() . '/bower_components/owl.carousel/dist/owl.carousel.min.js' );
+}
+
 // getting custom theme js
 function my_js() {
 	wp_enqueue_script( 'js', get_template_directory_uri() . '/assets/js/main-dist.js' );
 }
 
+add_action( 'wp_enqueue_scripts', 'vendor_js' );
 add_action( 'wp_enqueue_scripts', 'my_js' );
