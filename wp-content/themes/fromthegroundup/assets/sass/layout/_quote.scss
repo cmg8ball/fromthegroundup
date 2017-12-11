@@ -12,3 +12,10 @@
         border-left: solid 3px $brand-color--1;
     }
 }
+
+.content__quote--full {
+    blockquote,
+    span {
+        max-width: 800px;
+    }
+}
